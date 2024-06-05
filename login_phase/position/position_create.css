@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+        Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@font-face {
+    font-family: ltAbold;
+    src: url(./fonts/LTCushion-Medium.ttf);
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    background: linear-gradient(135deg, #07c8f9, #76caf1);
+}
+
+.registration--form {
+    margin-top: 1rem;
+    width: 150%;
+    padding: 25px;
+    border-radius: 5px;
+    background: #fff;
+    
+}
+
+.balik {
+    height: 50px;
+    width: 50px;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 1px;
+    color: rgb(14, 194, 119);
+    font-family: ltbold;
+    border-bottom: solid 2px rgb(14, 194, 119);
+}
+
+.mainuser-info {
+    display: flex;
+    padding-top: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.userinput-box {
+    width: calc(100% / 2 - 20px);
+}
+
+label {
+    margin: 5px;
+}
+
+/* TEXTBOX */
+.input {
+    height: 45px;
+    width: 100%;
+    /* padding-bottom: rem; */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.details {
+    display: block;
+    font-family: ltbold;
+    padding-bottom: 0.3rem;
+    font-weight: 500;
+}
+
+button {
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 5px;
+    --primary-color: #645bff;
+    --secondary-color: #fff;
+    --hover-color: #111;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    padding: 1rem 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+}
+
+button .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+}
+
+button .arrow::before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+button:hover .arrow {
+    background: var(--secondary-color);
+}
+
+button:hover .arrow:before {
+    right: 0;
+}
+
+/* .drop-input{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+label{
+    padding: 5px;
+    width: 95%;
+    margin: 5px;
+    font-family: vogue;
+    font-size: 20px;
+}
+
+.registration--form{
+    width: 70%;
+    height: 95%;
+    max-width: 65px;
+    background: rgba(184, 64, 64, 0.5);
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 5px;
+    box-shadow: inset -2px 2px 2px white;  
+}
+
+.mainuser-info{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+label{
+    width: 140px;
+    
+    padding-right: 5e;
+}
+
+.userinput-box{
+    display: inline-block;
+}
+
+.input{
+    padding: 0.3rem;
+    margin: 1rem;
+} */

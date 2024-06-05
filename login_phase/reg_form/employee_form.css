@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+        Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@font-face {
+    font-family: ltAbold;
+    src: url(./fonts/LTCushion-Medium.ttf);
+}
+
+body {
+    display: flex;
+    /* height: 100vh; */
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    background: rgba(71, 147, 227, 1);
+}
+
+.registration--form {
+    width: 150%;
+    padding: 25px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 1px;
+    color: rgb(14, 194, 119);
+    font-family: ltbold;
+    border-bottom: solid 2px rgb(14, 194, 119);
+}
+
+.mainuser-info {
+    display: flex;
+    padding-top: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.userinput-box {
+    width: calc(100% / 2 - 20px);
+}
+
+label {
+    margin: 5px;
+}
+
+/* TEXTBOX */
+.input {
+    height: 45px;
+    width: 100%;
+    /* padding-bottom: rem; */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.details {
+    display: block;
+    font-family: ltbold;
+    padding-bottom: 0.3rem;
+    font-weight: 500;
+}
+
